@@ -1,0 +1,201 @@
+/***** BASE STYLES *****/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #e09f3e;
+}
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 80px 0;
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 150px 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav {
+  width: 80%;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul li {
+  color: #e09f3e;
+}
+
+.header-content {
+  padding: 200px 0;
+}
+
+.header-content span {
+  color: #e09f3e;
+}
+
+#about {
+  background: #e09f3e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#about .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+#headshot {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.about-me {
+  margin: 30px 0;
+  width: 90%;
+}
+
+
+#work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.portfolio {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.portfolio-item {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.thumbnail {
+  padding: 100px 0;
+}
+.portfolio-item p {
+  width: 90%;
+}
+
+footer {
+  background: #e09f3e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+footer .contact {
+  width: 60%;
+}
+
+footer p {
+  font-size: 2.3rem;
+  margin: 0;
+}
+
+footer .me {
+  margin: 60px 0;
+}
+
+footer .social-icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row;
+}
+
+footer .social-icons p i {
+  color: white;
+  font-size: 4rem;
+}
