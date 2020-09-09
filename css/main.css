@@ -1,12 +1,11 @@
 /***** BASE STYLES *****/
 
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
 }
 
 ul,
@@ -23,24 +22,23 @@ a {
 
 h1 {
   font-family: 'Libre Baskerville', serif;
-  font-size: 4rem;
+  font-size: 3em;
 }
 
 h2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 3rem;
   font-weight: 400;
+  font-size: 2.5em;
 }
 
 h3 {
   font-family: 'Libre Baskerville', serif;
-  font-size: 3.5rem;
   text-align: center;
-  margin: 80px 0;
+  font-size: 1.5em;
+  margin: 60px 0;
 }
 
 p {
-  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -54,7 +52,7 @@ figure {
 
 .content-wrapper {
   width: 90%;
-  margin: 150px 0;
+  padding: 60px 0;
 }
 
 header {
@@ -62,24 +60,23 @@ header {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-top: 15px;
 }
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 
 header nav {
   width: 80%;
-  font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-flow: row wrap;
 }
 
 header nav ul {
@@ -92,11 +89,14 @@ header nav ul li {
   color: #e09f3e;
 }
 
-.header-content {
-  padding: 200px 0;
+.header-divider {
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
 }
 
-.header-content span {
+.header-content span,
+.header-content i {
   color: #e09f3e;
 }
 
@@ -118,10 +118,10 @@ header nav ul li {
 
 #headshot {
   width: 60%;
+  border: 5px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
 }
 
 .about-me {
@@ -133,12 +133,10 @@ header nav ul li {
 #work {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
 .portfolio {
-  padding: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,11 +149,9 @@ header nav ul li {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  margin: 30px 0;
 }
 
-.thumbnail {
-  padding: 100px 0;
-}
 .portfolio-item p {
   width: 90%;
 }
@@ -165,37 +161,132 @@ footer {
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-bottom: 60px;
 }
 
 footer .content-wrapper {
+  max-width: 900px;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+footer a {
+  color: white;
+}
+
+.me p {
+  margin: 0;
+}
+
+.me {
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
-}
-footer .contact {
-  width: 60%;
-}
-
-footer p {
-  font-size: 2.3rem;
-  margin: 0;
-}
-
-footer .me {
-  margin: 60px 0;
+  align-self: flex-start;
 }
 
 footer .social-icons {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-flow: row;
 }
 
+footer .social-icons p {
+  margin: 0 15px;
+}
+
 footer .social-icons p i {
   color: white;
-  font-size: 4rem;
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+
+  /* General styles */
+  .content-wrapper {
+    max-width: 1000px;
+  }
+
+  h1 {
+    line-height: 1.4;
+  }
+
+  h2 {
+    line-height: 1.333;
+  }
+
+  h3 {
+    line-height: 1.25;
+  }
+
+  header {
+    justify-content: space-around;
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    width: 90%;
+  }
+
+  .header-content {
+    width: 80%;
+    align-self: flex-start;
+  }
+
+  header nav {
+    width: 40%;
+    align-self: flex-end;
+  }
+
+  header nav ul {
+    justify-content: space-around;
+  }
+
+  header nav ul li {
+  }
+
+  .header-divider {
+    margin: 50px 0;
+  }
+
+  .header-content {
+    padding: 0;
+  }
+
+  #headshot {
+    width: 50%;
+    padding: 0;
+  }
+
+  #about .content-wrapper {
+    width: 60%;
+  }
+
+  .portfolio-item {
+    width: 28%;
+    align-self: flex-start;
+    flex-grow: 1;
+    margin: 0 15px;
+  }
+
+  .thumbnail {
+    width: 100%;
+  }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
+
+
 }
