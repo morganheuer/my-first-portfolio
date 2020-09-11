@@ -40,6 +40,7 @@ h3 {
 
 p {
   text-align: center;
+  line-height: 1.6;
 }
 
 img {
@@ -174,6 +175,10 @@ footer .content-wrapper {
   flex-flow: row wrap;
 }
 
+footer p strong {
+  font-size: 1.35em;
+}
+
 footer a {
   color: white;
 }
@@ -207,6 +212,8 @@ footer .social-icons p i {
   color: white;
   font-size: 2em;
 }
+
+
 
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
